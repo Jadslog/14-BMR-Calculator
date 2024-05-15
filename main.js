@@ -21,5 +21,5 @@ calculateBtn.addEventListener("click", () => {
         
     let BMR = calculateBMR(weight.value, height.value, age.value, genderValue);
 
-    calories.innerHTML = BMR;
+    calories.innerHTML = BMR.toLocaleString("en_US");
 });
