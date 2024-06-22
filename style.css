@@ -35,6 +35,10 @@
     border: 1px solid #d5dbdd;
 }
 
+.bmr-calculator form input[type="text"].invalid {
+    border: 1px solid red;
+}
+
 .bmr-calculator form {
     display: flex;
     flex-direction: column;
@@ -80,4 +84,14 @@
     font-size: 38px;
     font-weight: 900;
     margin-right: 8px;
+}
+
+.bmr-calculator .result .error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.bmr-calculator .result .error-message.active {
+    display: block;
 }
